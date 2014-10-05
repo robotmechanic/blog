@@ -11,7 +11,8 @@
 </p>
 <h2>Comments</h2>
 <div id="comments">
-	<%= render :partial => @post.comments.reverse%>
+<%= render :partial => @post.comments.reverse%>
+
 </div>
 
 <%= form_for([@post, Comment.new], remote: true) do |f| %>
