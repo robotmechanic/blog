@@ -34,6 +34,7 @@ class CommentsController < ApplicationController
       else
         format.html { render :new }
         format.json { render json: @comment.errors, status: :unprocessable_entity }
+        format.js #create.js.erb
       end
     end
   end
